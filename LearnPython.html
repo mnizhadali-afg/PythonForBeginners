@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introdyction to Python</title>
+
+    <style>
+      * {
+        background-color: #0d1117;
+        color: #bbbdc0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      .container {
+        width: 75%;
+        margin: 0 auto;
+      }
+      p {
+        line-height: 1.5;
+      }
+      code {
+        display: block;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      code,
+      span {
+        background-color: #151b20;
+        font-family: monospace;
+      }
+      .inline {
+        display: inline;
+      }
+      .py_kwr {
+        color: orange;
+      }
+      .string {
+        color: rgb(53, 202, 78);
+      }
+      .number {
+        color: rgb(255, 113, 255);
+      }
+      .comment {
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- first steps -->
+      <h1>Welcome to Python for Beginners</h1>
+      <p>
+        In this repository, you will learn the basics about Python programming
+        language.
+      </p>
+      <h2>Python is used in:</h2>
+      <ul>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Artificial_intelligence"
+            >Artificial Intelligence</a
+          >
+        </li>
+        <li><a href="https://en.wikipedia.org/wiki/robotics">Robotics</a></li>
+        <li>Servers Configuration and Management</li>
+        <li>Mobile, Desktop and Web App development</li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"
+            >and more...</a
+          >
+        </li>
+      </ul>
+
+      <!-- Setup environment -->
+      <h2>Setting up the environment</h2>
+      <h3>Download Python</h3>
+      <p>
+        You can download the latest version of Python installer from
+        <a href="https://www.python.org/downloads/">here</a>. Just follow all
+        the steps and finish the installation. Once the installation finished,
+        open up the <em>IDLE</em> Python's editor and write your code. After
+        wrting the code, save the file with any name but the extension should be
+        <code class="inline">.py</code>, then press
+        <code class="inline">F5</code> to run your code.
+      </p>
+      <p>
+        Let's go deeper on the concepts. We start with the legacy
+        <strong>Hello, World!</strong> program. The syntax in Python are very
+        easy to follow. Let's write our first program.
+      </p>
+      <pre>
+      <code>
+      <span class="py_kwr">print</span>(<span class="string">'Hello, World!'</span>)
+
+      <span class="comment">// print statement used to show a message on the console</span>
+      </code>
+      </pre>
+      <h3>Hint</h3>
+      <p>
+        Python don't use the semiconol <code class="inline">;</code>, so be
+        happy with that :)
+      </p>
+
+      <!-- Declaring variables -->
+      <hr />
+      <h2>Variable</h2>
+      <p>
+        Variable is used to store a data. It's in computer's memory and when you
+        need it, you can use it. Then, inside the
+        <code class="inline">print</code> statement, you can put a comma and
+        then use the variable name, to show its value on the console. Here is
+        the example:
+      </p>
+
+      <pre>
+      <code>
+      message = <span class="string">'Hello, World!'</span>
+      <span class="py_kwr">print</span>(message)
+
+      <span class="comment">Hello, World! // output</span>
+      </code>
+      </pre>
+
+      <!-- Naming rules -->
+      <h3>Variable naming rules</h3>
+      <p>
+        When creating variables, you must follow some rules to declare the right
+        variable. Here are the basic rules:
+      </p>
+      <ul>
+        <li>
+          Variable names contains:
+          <ul>
+            <li>letters</li>
+            <li>numbers</li>
+            <li>characters</li>
+          </ul>
+        </li>
+        <li>
+          and starts with only:
+          <ul>
+            <li>underscore</li>
+            <li>letters</li>
+            <li>but not <strong>numbers</strong></li>
+          </ul>
+        </li>
+        <li>
+          Space is not allowed, if a variable name is combined of two words, you
+          can use underscore instead.
+        </li>
+        <li>Don't use Python keywords like (print, def, and, etc.)</li>
+        <li>It should be short and descriptive</li>
+      </ul>
+
+      <!-- Data Types -->
+      <h2>Data Types</h2>
+      <ul>
+        <li>
+          <strong>String</strong>: As other programming languages, you can
+          create textual information in Python. To support
+          <code class="inline">string</code>, you can use different symbols. Two
+          symbols used for string are:
+          <code class="inline">''</code> (single-quout) and
+          <code class="inline">""</code> (double-quote). You created string in
+          last example.
+        </li>
+        <li>
+          <strong>Numbers</strong>: Python supports both decimal and non-decimal
+          numbers. After assigning the value for the variable, Python decides
+          which type of number is assigned to the variable. Don't worry, he is
+          so SMART :)
+        </li>
+      </ul>
+
+      <h3>Example (String)</h3>
+      <pre>
+      <code>
+      first_name = <span class="string">'Ali'</span>
+      last_name = <span class="string">'Mousavi Nizhad'</span>
+      
+      <span class="py_kwr">print</span>(first_name, last_name)
+
+      <span class="comment">// output: Ali Mousavi Nizhad</span>
+      </code>
+      </pre>
+      <h3>Example (Number)</h3>
+      <pre>
+      <code>
+      first_number = <span class="number">12</span>
+      second_number = <span class="number">25.12</span>
+      sum = first_number + second_number
+      
+      <span class="py_kwr">print</span>(sum)
+
+      <span class="comment">// output: 37.12</span>
+      </code>
+      </pre>
+    </div>
+  </body>
+</html>
