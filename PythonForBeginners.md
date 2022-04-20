@@ -1,16 +1,21 @@
 # Welcome to Python for Beginners
 
-## H2
+In this repository, you will learn the basics about Python programming language.
 
-### H3
+## Python is used in:
+
+- [Artificial Intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence)
+- [Robotics](https://en.wikipedia.org/wiki/robotics)
+- Servers Configuration and Management
+- Mobile, Desktop and Web App development
+- [and more...](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+Let's go deeper on the concepts. We start with the legacy **Hello, World!** program.
+
 
 **bold text**
 
 _italicized text_
-
-1. First item
-2. Second item
-3. Third item
 
 - First item
 - Second item
